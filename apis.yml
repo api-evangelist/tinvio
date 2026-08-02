@@ -1,8 +1,25 @@
 aid: tinvio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tinvio.png
 name: Tinvio
-description: 'Tinvio is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Tinvio is a Singapore-based B2B commerce and payments SaaS that helped merchants
+  and their suppliers manage ordering, invoicing, and business payments across Southeast Asia. The
+  company was backed by Partech. As of 2026 Tinvio has been integrated into Jaz (jaz.ai), an
+  AI-powered accounting platform for modern businesses, and now operates as a feature within Jaz
+  rather than as a standalone product; tinvio.com redirects to the Jaz landing page. Tinvio does
+  not currently publish a public developer portal, API reference, SDK, CLI, or OpenAPI definition,
+  so this profile captures the company identity and its live domain-security posture for the API
+  Evangelist network rather than an API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/tinvio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,20 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired-merged
+x-successor: jaz
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Applicative Saas
+- B2B Commerce
+- Payments
+- Supplier Management
+- Accounting
+- Fintech
+- SaaS
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tinvio-domain-security.yml
 - type: Website
-  url: https://tinvio.com/
+  url: https://www.jaz.ai/tinvio
+- type: Blog
+  url: https://www.jaz.ai/blog
+- type: Pricing
+  url: https://www.jaz.ai/pricing
+- type: SignUp
+  url: https://app.jaz.ai/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
